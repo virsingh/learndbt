@@ -3,4 +3,4 @@ select
     first_name,
     last_name
 
-from EDW_SFAPPCOE_DB.wi.customers
+from {{source('wi','customers')}}
