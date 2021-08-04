@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from EDW_SFAPPCOE_DB.wi.orders
+from {{source('wi','orders')}}

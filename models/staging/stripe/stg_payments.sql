@@ -4,4 +4,4 @@ select id payment_id,
         status,
         amount/100 amount,
         created as created_at
-from EDW_SFAPPCOE_DB.wi.payment
+from {{source('wi','payment')}}

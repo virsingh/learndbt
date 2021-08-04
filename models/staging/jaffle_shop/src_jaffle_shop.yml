@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: wi
+    description: Source Similar Database for jaffle shop
+    database: EDW_SFAPPCOE_DB
+    tables:
+      - name: customers
+        description: Source Similar  copy of customers
+        columns:
+          - name: id
+            description: Customer Primary Key
+            tests:
+              - unique
+              - not_null
+      - name: orders
+        description: Source Similar  copy of orders
+        columns:
+        - name: id
+          description: Order ID, primary key of order data
+          tests:
+            - unique
+            - not_null
+
+
